@@ -1,0 +1,326 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+:root{
+    --main-color : #FAB400;
+}
+
+body{
+    background-color: #100A34;
+}
+
+
+
+/*  */
+
+
+
+.main-game{
+    width: 942px;
+    margin: 0 auto;
+    position: relative;
+    top: 180px;
+}
+
+
+
+.top-section{
+    display: flex;
+    flex-direction:column;
+    align-items:flex-start;
+    width: 417px;
+    margin: 0 auto;
+    /* border: 1px solid white; */
+    margin-bottom: -40px;
+}
+
+
+
+#game-title{
+    color: var(--main-color);
+    font-family: Molot;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 70px;
+    line-height: 82px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.045em;
+}
+
+
+.bar{
+    width:10%;
+    height: 5px;
+    background-color:var(--main-color);
+}
+
+
+/*  */
+
+
+.last-section{
+    color: var(--main-color);
+    margin-top: 110px;
+    display: flex;
+    justify-content:space-between;
+}
+
+
+.last-section .left-section{
+    width: 576px;
+}
+
+
+.last-section .game-info{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    font-family: Montserrat SemiBold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+
+
+span#target-now{
+    font-family: Montserrat SemiBold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 27px;
+    color: #EDAD07EB;
+}
+
+
+.card-game{
+    background-color: white;
+    height: 300px;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding:1em;
+    overflow: hidden;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color:#543BD8;
+    margin-bottom: 1em;
+    display:inline-block;
+    position: relative;
+    margin:.2em .2em;
+}
+
+
+
+
+
+
+
+
+/*  */
+
+
+
+.game-setting{
+    width: 272px;
+    height: 257px;
+    background-color: white;
+    margin-top: 55px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.game-setting .card-container{
+    width: 75%;
+    height: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+
+
+.card-heading{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+
+    color: #100A34;
+}
+
+
+
+.game-setting label{
+    font-family: Nexa;
+    font-style: normal;
+    font-weight: 350;
+    font-size: 16px;
+    line-height: 140%;
+    /* or 22px */
+
+
+    color: rgba(41, 40, 65, 0.94);
+}
+
+
+.box-input{
+    padding:.6em 0;
+    background: #f5f5f5;
+    border: 1px solid #100a34a6;
+    border-radius: 5px;
+}
+
+
+.box-input input{
+    background-color:transparent;
+    border: none;
+    margin-left: 10px;
+    outline: none;
+    font-size:16px;
+    width: 90%;
+}
+
+button#btn-new-game{
+    padding: 1em;
+    width: 100%;
+    margin-top: 10px;
+    background: linear-gradient(180deg, rgba(250, 180, 0, 0.8) 0%, #FBB400 100%);
+    border-radius: 5px;
+    border: none;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 140%;
+    /* identical to box height, or 21px */
+
+
+    color: #100A34;
+
+}
+
+
+/*  */
+
+
+
+
+
+@media (max-width: 1000px){
+    .main-game {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+@media (max-width: 1000px){
+    .last-section {
+        flex-direction: column;
+        width: 70%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1000px){
+    .game-setting {
+        margin-bottom: 5em;
+    }
+
+    .game-setting, .left-section {
+        width: 89%;
+    }
+}
+
+
+
+@media (max-width: 1000px){
+    .game-setting, .left-section {
+        width: 89%;
+    }
+}
+
+/*---------------------  */
+
+
+
+@media (max-width: 800px){
+    .main-game {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+@media (max-width: 800px){
+    .top-section {
+        position: relative;
+        left: -85px;
+    }
+}
+
+
+
+@media (max-width: 800px){
+    .last-section {
+        flex-direction: column;
+        width: 70%;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: -85px;
+    }
+}
+
+
+/*  */
+
+
+
+@media (max-width: 500px){
+    .top-section {
+        position: relative;
+        left: -198px;
+    }
+    #game-title {
+        font-size: 60px;
+    }
+
+    .last-section {
+        flex-direction: column;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: -230px;
+    }
+
+    .last-section .left-section {
+        width: 410px;
+    }
+
+}

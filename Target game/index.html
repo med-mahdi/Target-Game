@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Target Game</title>
+    </head>
+    <body>  
+
+        <section class="main-game">
+            <div class="top-section">
+                <h1 id="game-title">CIBLE GAME</h1>
+                <span class="bar"></span>
+            </div>
+
+            <div class="last-section">
+
+                <div class="left-section">
+                    <div class="game-info">
+                        <h3 id="target-amount"><span id="target-now">0</span> / <span id="allTargets">0</span></h3>
+                        <h3><span id="timeout-sec">0</span> sec</h3>
+                    </div>
+
+                    <div class="card-game">
+                    </div>
+                </div>
+
+                <div class="game-setting">
+                    <div class="card-container">
+                        <h3 class="card-heading">Game Settings</h3>
+
+                        <div class="form">
+                            <label for="">Cible number
+                                <div class="box-input">
+                                    <input id="count_target" type="number"  value="1" min="1" max=25 name="cible_number" id="cible_number">
+                                </div>
+                            </label>
+                            <button id="btn-new-game">Start New Game</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
+        <script src="script.js"></script>
+
+
+    </body>
+</html>
